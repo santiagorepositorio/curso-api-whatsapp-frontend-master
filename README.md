@@ -1,4 +1,4 @@
-# Frontend - Curso WhatsApp API
+# Frontend - WhatsApp API
 
 ## Build Setup
 
