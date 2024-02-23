@@ -12,17 +12,12 @@
                   <v-list-item-content>
                     <v-list-item-title v-text="item.wa_id"></v-list-item-title>
 
-                    <v-list-item-subtitle
-                      v-text="item.body"
-                    ></v-list-item-subtitle>
+                    <v-list-item-subtitle v-text="item.body"></v-list-item-subtitle>
                   </v-list-item-content>
                 </template>
               </v-list-item>
 
-              <v-divider
-                v-if="index < items.length - 1"
-                :key="index"
-              ></v-divider>
+              <v-divider v-if="index < items.length - 1" :key="index"></v-divider>
             </template>
           </v-list-item-group>
         </v-list>
@@ -63,14 +58,12 @@
                 </div>
                 <div v-else-if="message.type == 'audio'">
                   <audio controls>
-                    <source :src="message.body" type="audio/ogg" />
-                    Your browser does not support the audio element.
+                    <source :src="message.body" type="audio/ogg" />Your browser does not support the audio element.
                   </audio>
                 </div>
                 <div v-else-if="message.type == 'video'">
                   <video width="320" height="240" controls>
-                    <source :src="message.body" />
-                    Your browser does not support the video tag.
+                    <source :src="message.body" />Your browser does not support the video tag.
                   </video>
                 </div>
                 <p class="text-right text-subtitle-2 font-italic">
@@ -80,8 +73,7 @@
                     :color="formatReadStatus(message.status).color"
                     small
                     v-on="on"
-                    >{{ formatReadStatus(message.status).icon }}</v-icon
-                  >
+                  >{{ formatReadStatus(message.status).icon }}</v-icon>
                 </p>
               </div>
             </v-card>
@@ -98,7 +90,7 @@
             filled
             clear-icon="mdi-close-circle"
             clearable
-            label="Type a message..."
+            label="Escribe el mensaje..."
             type="text"
             class="message-box"
             @click:append-outer="sendMessage"

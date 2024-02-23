@@ -10,7 +10,7 @@ export default {
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
     titleTemplate: '%s',
-    title: 'WhatsApp API Messenger',
+    title: 'Advocatus Online',
     htmlAttrs: {
       lang: 'en'
     },
@@ -21,7 +21,7 @@ export default {
       { name: 'format-detection', content: 'telephone=no' }
     ],
     link: [
-      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
+      { rel: 'icon', type: 'image/x-icon', href: '/icono.png' }
     ]
   },
 
@@ -30,8 +30,8 @@ export default {
   ],
 
   env: {
-    pusherAppKey: process.env.PUSHER_APP_KEY || '0f5b0d6c0818b897742b',
-    pusherAppCluster: process.env.PUSHER_APP_CLUSTER || 'us2'
+    pusherAppKey: process.env.PUSHER_APP_KEY || 'e39fdc2658d60da751bf',
+    pusherAppCluster: process.env.PUSHER_APP_CLUSTER || 'sa1'
   },
 
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
@@ -58,7 +58,7 @@ export default {
 
   // Axios module configuration: https://go.nuxtjs.dev/config-axios
   axios: {
-    baseURL: process.env.BACKEND_URL || 'http://127.0.0.1:8000/api',
+    baseURL: process.env.BACKEND_URL || 'https://advocatus-online.com/api',
   },
 
   // Vuetify module configuration: https://go.nuxtjs.dev/config-vuetify
