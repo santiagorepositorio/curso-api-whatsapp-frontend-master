@@ -243,7 +243,7 @@ export default {
       this.$axios
         .post('/send-message-templates', payload)
         .then(({ data }) => {
-          alert('Message(s) successfully sent!');
+          alert('Enviado Correctamente!');
         })
         .catch((err) => {
           alert(err);
